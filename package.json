@@ -1,0 +1,31 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "ios": "react-native run-ios",
+    "web": "expo start --web",
+    "start": "react-native start",
+    "android-clean": "cd android && ./gradlew clean",
+    "android-build-debug": "cd android/ && ./gradlew assembleDebug",
+    "android-release": "cd android && ./gradlew assembleRelease --no-daemon",
+    "android-bundle": "react-native bundle --platform android --dev false --entry-file ./index.js --bundle-output ./android/app/src/main/assets/index.bundle --sourcemap-output ./android/app/src/main/assets/index.map --assets-dest ./android/app/src/main/res/",
+    "android": "react-native run-android"
+  },
+  "dependencies": {
+    "expo": "~41.0.1",
+    "expo-splash-screen": "~0.10.2",
+    "expo-status-bar": "~1.0.4",
+    "expo-updates": "~0.5.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "~0.63.4",
+    "react-native-gesture-handler": "~1.10.2",
+    "react-native-reanimated": "~2.1.0",
+    "react-native-screens": "~3.0.0",
+    "react-native-unimodules": "~0.13.3",
+    "react-native-web": "~0.13.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0"
+  },
+  "private": true
+}
